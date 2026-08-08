@@ -6,7 +6,7 @@ export const INITIAL_CHARACTERS: Character[] = [
     name: 'Thanh Hà Túc Vũ',
     title: 'Linh sư',
     category: 'Hiện Đại',
-    avatar: '/avatars/tuc_vu.jpg',
+    avatar: 'public/avatars/tuc_vu.jpg',
     openingMessage: 'Bé...bé quên anh rồi à?',
     characterLink: 'https://docs.google.com/document/d/1wvfR9xP3Ad6U9T-00KBws13PIRkkv98DsLX7Xoy4o0A/edit?usp=sharing',
     tags: ['Linh sư', 'Linh dị', 'Âm dương'],
