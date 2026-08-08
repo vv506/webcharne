@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoa Lạc Giản Lưu Hương</title>
+    <script>
+      (function() {
+        try {
+          var target = window.hasOwnProperty('fetch') ? window : (window.Window && window.Window.prototype);
+          if (target) {
+            var descriptor = Object.getOwnPropertyDescriptor(target, 'fetch');
+            if (descriptor && !descriptor.set && descriptor.configurable) {
+              Object.defineProperty(target, 'fetch', {
+                get: descriptor.get,
+                set: function() {
+                  console.warn('Prevented overriding window.fetch');
+                },
+                configurable: true
+              });
+            }
+          }
+        } catch (e) {
+          console.error('Error in fetch polyfill interceptor:', e);
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#FADAD9] dark:bg-[#201113] font-sans antialiased selection:bg-[#E892A0] selection:text-white transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
