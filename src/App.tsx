@@ -150,7 +150,7 @@ export default function App() {
 
         // 1. Specific matches for key character IDs & filenames
         if (charId === 'thanh-ha-tuc-vu' && (fileLower.includes('tuc_vu') || fileLower.includes('tuc-vu') || fileLower.includes('tucvu') || fileLower.includes('thanh_ha') || fileLower.includes('thanh-ha'))) {
-          return `/avatars/${file}`;
+          return `public/avatars/${file}`;
         }
         if (charId === 'astraia' && fileLower.includes('astraia')) {
           return `/avatars/${file}`;
